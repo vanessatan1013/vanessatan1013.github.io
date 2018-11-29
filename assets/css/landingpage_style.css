@@ -1,0 +1,71 @@
+body, html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+@font-face {
+  font-family: 'ArchivoBlack';
+  src: url('fonts/ArchivoBlack/archivoblack-webfont.woff2') format('woff2'),
+       url('fonts/ArchivoBlack/archivoblack-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#title-container {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  left: 50px;
+}
+
+#title {
+  color: white;
+  font-family: "ArchivoBlack";
+  font-size: 30px;
+}
+
+#background-container {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+#background {
+  height: 100%;
+  width: 100%;
+  left: 0px;
+  position: fixed;
+}
+
+#enter-container {
+  position: fixed;
+  display: inline-block;
+  z-index: 2;
+  bottom: 60px;
+}
+
+#enter-link {
+  border: none;
+  -webkit-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  background: transparent;
+  position: absolute;
+  color: white;
+  font-size: 17px;
+  z-index: 2;
+  font-family: acumin-pro-wide, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#enter-link:hover {
+  letter-spacing: 2px;
+  cursor: pointer;
+}

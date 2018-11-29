@@ -1,0 +1,57 @@
+body, html {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+@font-face {
+  font-family: 'ArchivoBlack';
+  src: url('fonts/ArchivoBlack/archivoblack-webfont.woff2') format('woff2'),
+       url('fonts/ArchivoBlack/archivoblack-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#message-container {
+  text-align: center;
+}
+
+#message {
+  font-family: "ArchivoBlack";
+  display: inline-block;
+  color: #E848EF;
+  font-size: 40px;
+  position: relative;
+  top: 320px;
+}
+
+#exit-container {
+  text-align: center;
+  position: absolute;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 10px;
+}
+
+#exit {
+  font-family: letter-gothic-std, monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: white;
+  display: inline-block;
+  border: none;
+  background-color: inherit;
+  -webkit-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+}
+
+#exit:hover {
+  letter-spacing: 3px;
+  cursor: pointer;
+}
